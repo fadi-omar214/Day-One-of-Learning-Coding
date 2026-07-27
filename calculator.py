@@ -1,16 +1,16 @@
-while True: 
-    def multiplication(x, y, /): 
-        return x * y
+def multiplication(x, y, /): 
+    return x * y
   
-    def addition(x, y, /):
-        return x + y
+def addition(x, y, /):
+    return x + y
 
-    def subtraction(x, y, /):
-        return x - y
+def subtraction(x, y, /):
+    return x - y
 
-    def division(x, y, /):
-        return x / y
+def division(x, y, /):
+    return x / y
 
+while True:
     first_number = float(input("What is your first number? "))
     operation = input("Choose an operator: +, -, *, /: ")
     second_number = float(input("What is your second number? "))
