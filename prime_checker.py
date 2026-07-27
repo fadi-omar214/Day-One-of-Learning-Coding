@@ -7,7 +7,10 @@ def is_prime(number):
     return True
 
 while True:
-    number = int(input("Enter a number: "))
+    try:
+        number = int(input("Enter a number: "))
+    except ValueError:
+        print("Error")
 
     if is_prime(number):
         print(f"{number} is a prime number.")
